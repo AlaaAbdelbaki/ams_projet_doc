@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\usepackage{titling}
+\usepackage{hyperref}
+
+
+\author{Alaa Abdelbaki\\Youssef Derouiche}
+\title{Cahier de charges\\Factory de mots de passes}
+\date{}
+
+% Change the table of content's title
+\renewcommand{\contentsname}{Table de matières}
+
+
+
+\begin{document}
+
+
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+\newpage
+\tableofcontents
+
+\newpage
+\include{chapters/introduction/introduction}
+
+\newpage
+\include{chapters/périmètre/périmètre_du_projet}
+
+\newpage
+\include{chapters/public_cible/public_cible}
+
+\newpage
+\include{chapters/senario_test/senario_test_utilisateurs}
+
+\newpage
+\include{chapters/evaluatuin/evaluation}
+
+\newpage
+\include{chapters/risques/risques}
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
