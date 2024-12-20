@@ -1,7 +1,16 @@
-\documentclass{article}
+\documentclass[a4paper,12pt]{article}
 
 \usepackage{titling}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{geometry}
+
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+
+
 
 
 \author{Alaa Abdelbaki\\Youssef Derouiche}
@@ -16,32 +25,18 @@
 \begin{document}
 
 
-\begin{titlepage}
-    \maketitle
-\end{titlepage}
-\newpage
+\maketitle
 \tableofcontents
 
-\newpage
-\include{chapters/introduction/introduction}
+\clearpage
 
-\newpage
-\include{chapters/périmètre/périmètre_du_projet}
+\include{chapters/Introduction/introduction}
+\include{chapters/analyse_besoins/analyse_besoins}
+\include{chapters/analyse_codes/analyse_codes}
+\include{chapters/conclusion/conclusion}
 
-\newpage
-\include{chapters/public_cible/public_cible}
-
-\newpage
-\include{chapters/senario_test/senario_test_utilisateurs}
-
-\newpage
-\include{chapters/evaluatuin/evaluation}
-
-\newpage
-\include{chapters/risques/risques}
-
-
-\bibliographystyle{plain}
+\clearpage
+\bibliographystyle{unsrt}
 \bibliography{references}
 
 \end{document}

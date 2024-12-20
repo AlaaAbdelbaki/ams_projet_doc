@@ -1,0 +1,23 @@
+\section{Conclusion}
+L'exploitation du code source de génération des noms russes a permis de comprendre le fonctionnement des réseaux de neurones récurrents (RNN) et des cellules GRU (Gates Recurrent Unit) pour la génération de texte.\\
+Ces résultats permettre de mieux choisir le bon modèle pour la génération des mots de passes, et d'optimiser les hyperparamètres pour obtenir des résultats satisfaisants.\\
+Le tableau suivant résume les choix à faire pour le modèle de génération des mots de passes:
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|X|X|X|}
+        \hline
+        \textbf{Modèle}              & +++ & RNN est le modèle optimal pour ce problème. \\
+        \hline
+        \textbf{Taux d'aprentissage} & +++ & Une valeur autour de 0.0001 est idéale      \\
+        \hline
+        \textbf{Précision}           & +   & Une précision de 12\% (faible)              \\
+        \hline
+        \textbf{Époques}             & +++ & Inutile de dépasser 2,000 époques           \\
+        \hline
+        \textbf{Output}              & ++  & Génération des noms russes inexistantes     \\
+        \hline
+    \end{tabularx}
+    \caption{Résumé des choix pour le modèle de génération des mots de passes}
+    \label{tab:conclusion}
+\end{table}
